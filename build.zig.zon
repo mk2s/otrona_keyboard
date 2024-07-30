@@ -1,0 +1,23 @@
+.{
+    .name = "examples/raspberrypi/rp2040",
+    .version = "0.0.0",
+    .dependencies = .{
+        .@"microzig/build" = .{
+            .url = "https://downloads.microzig.tech/microzig-0.12.1/build-0.0.1.tar.gz",
+            .hash = "122066a2dd8e6cfef346bc5cd6de8294fe9d53bde59b65b042750ee25537438df2ad",
+        },
+        .@"microzig/bsp/raspberrypi/rp2040" = .{
+            .url = "https://downloads.microzig.tech/microzig-0.12.1/bsp/raspberrypi/rp2040-0.0.0.tar.gz",
+            .hash = "1220a557b7c940ea0193e8e4f516c6dab6d16dd41e528486889f356a2388930aae42",
+        },
+    },
+    .paths = .{
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "scripts",
+    },
+    .minimum_zig_version = "0.12.0",
+}
